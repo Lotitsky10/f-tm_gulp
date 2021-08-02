@@ -1045,9 +1045,19 @@
             margin: 0 6px;
         }
         &__arrow--disabled{
-            display: none;
+            opacity: 0;
+            pointer-events: none;
         }
         &__list-num{
             font-weight: 600;
+            font-size: 14px;
+            color: #707070;
         }
+        &____list-num--active{
+            color: $title;
+        }
+    }
+
+    .blog-one{
+        color:violet;
     }
