@@ -1080,6 +1080,13 @@
         &__tags{
             margin-bottom: 30px;
         }
+        &__tags-title{
+            color: $title;
+            @extend %title-font;
+            font-size: 20px;
+            line-height: 31px;
+            margin-bottom: 15px;
+        }
         &__tags-link{
             margin-bottom: 10px;
             margin-right: 23px;
@@ -1089,5 +1096,34 @@
             font-weight: 600;
             border: 1px solid  rgba(#454667, .5);
             border-radius: 14px;
+            display: inline-block;
+        }
+        &__links{
+            padding: 40px 0 30px;
+            border-top: 1px solid #dfdfdf;
+            border-bottom: 1px solid #dfdfdf;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__link{
+            width: 243px;
+            position: relative;
+            color: #707070;
+            font-size: 14px;
+            font-weight: 600;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &__link-prev{
+            padding-left: 44px;
+
+        }
+        &__link-next{
+            padding-right: 44px;
+            text-align: right;
         }
     }
